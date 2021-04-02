@@ -27,16 +27,16 @@ const EditProgram = () => {
     })
   },[])
 
-const[dating,setDating]=useState<any>('')
+// const[dating,setDating]=useState<any>('')
   const dateSplit=given?.tentativeStartDate.split('/');
 
   const dateJoin=[dateSplit?.[2],dateSplit?.[1],dateSplit?.[0]].join('-');
   console.log(dateJoin,typeof(dateJoin))
-  useEffect(()=>{
-    setDating(dateJoin)
-  },[])
-  console.log(dating)
-  const dateObj = new Date('2001-07-21');
+  // useEffect(()=>{
+  //   setDating(dateJoin)
+  // },[])
+  console.log(dateJoin)
+  const dateObj = new Date('2001-06-21');
   
   console.log(dateObj);
   
